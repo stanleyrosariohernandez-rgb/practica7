@@ -30,7 +30,7 @@ Para ejecutar el proyecto se necesita:
 1. Clonar el repositorio:
 
    ```bash
-   git clone URL_DEL_REPOSITORIO
+   git clone https://github.com/stanleyrosariohernandez-rgb/practica7.git
    ```
 
 2. Entrar en la carpeta:
@@ -93,8 +93,6 @@ Para ejecutar el proyecto se necesita:
 ## Pruebas
 
 Se realizaron pruebas de las operaciones CRUD, validación de datos, consulta de registros inexistentes y manejo de errores.
-
-Las evidencias se encuentran en la carpeta `evidencias`.
 
 ## Base de datos
 
