@@ -1,0 +1,237 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.encabezado h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.encabezado p {
+    color: #dbeafe;
+    font-size: 15px;
+}
+
+/* CONTENIDO */
+.principal {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+/* TARJETAS */
+.tarjeta {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.tarjeta h2 {
+    color: #1e3a8a;
+    font-size: 21px;
+    margin-bottom: 22px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 12px;
+}
+
+/* CAMPOS DEL FORMULARIO */
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    flex: 1;
+}
+
+.grupo-campo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.grupo-campo input,
+.grupo-campo textarea {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+.grupo-campo input:focus,
+.grupo-campo textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.grupo-campo textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* CAMPOS EN FILA */
+.fila-campos {
+    display: flex;
+    gap: 20px;
+}
+
+/* BOTONES */
+.botones-formulario {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#btnGuardar {
+    background-color: #2563eb;
+    color: white;
+}
+
+#btnGuardar:hover {
+    background-color: #1d4ed8;
+}
+
+#btnLimpiar {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+#btnLimpiar:hover {
+    background-color: #cbd5e1;
+}
+
+/* TABLA */
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+thead {
+    background-color: #eff6ff;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+th {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.mensaje-vacio {
+    text-align: center;
+    color: #64748b;
+    padding: 25px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e2e8f0;
+    color: #475569;
+    font-size: 13px;
+}
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 600px) {
+
+    .contenedor {
+        width: 94%;
+    }
+
+    .encabezado h1 {
+        font-size: 23px;
+    }
+
+    .fila-campos {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .botones-formulario {
+        flex-direction: column;
+    }
+
+    .botones-formulario button {
+        width: 100%;
+    }
+
+    .tarjeta {
+        padding: 17px;
+    }
+}
+
+
+/* BOTÓN EDITAR */
+.btn-editar {
+    background-color: #f59e0b;
+    color: white;
+    margin-right: 5px;
+    padding: 8px 12px;
+}
+
+.btn-editar:hover {
+    background-color: #d97706;
+}
+
+/* BOTÓN ELIMINAR */
+.btn-eliminar {
+    background-color: #dc2626;
+    color: white;
+    padding: 8px 12px;
+}
+
+.btn-eliminar:hover {
+    background-color: #b91c1c;
+}

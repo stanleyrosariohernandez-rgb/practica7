@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Productos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor">
+            <h1>Gestión de Productos</h1>
+            <p>Administra el inventario de tu negocio</p>
+        </div>
+    </header>
+
+    <main class="contenedor principal">
+
+        <section class="tarjeta">
+            <h2 id="tituloFormulario">Registrar producto</h2>
+
+            <form id="formularioProducto">
+
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre del producto</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Ej. Laptop HP"
+                        required
+                    >
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="descripcion">Descripción</label>
+                    <textarea
+                        id="descripcion"
+                        placeholder="Descripción del producto"
+                    ></textarea>
+                </div>
+
+                <div class="fila-campos">
+                    <div class="grupo-campo">
+                        <label for="precio">Precio</label>
+                        <input
+                            type="number"
+                            id="precio"
+                            min="0.01"
+                            step="0.01"
+                            placeholder="0.00"
+                            required
+                        >
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="cantidad">Cantidad</label>
+                        <input
+                            type="number"
+                            id="cantidad"
+                            min="0"
+                            step="1"
+                            placeholder="0"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="botones-formulario">
+                    <button type="submit" id="btnGuardar">
+                        Guardar producto
+                    </button>
+
+                    <button type="reset" id="btnLimpiar">
+                        Limpiar
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Productos registrados</h2>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tablaProductos">
+                        <tr>
+                            <td colspan="6" class="mensaje-vacio">
+                                Los productos aparecerán aquí.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Sistema de Gestión de Productos - Proyecto académico</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
